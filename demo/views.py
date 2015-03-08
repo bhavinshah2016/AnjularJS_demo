@@ -9,3 +9,7 @@ class IndexView(TemplateView):
 
 class BasicView(TemplateView):
     template_name = 'demo/basic.html'
+
+
+class DirectiveView(TemplateView):
+    template_name = 'demo/directive.html'

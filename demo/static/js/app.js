@@ -1,14 +1,14 @@
 var app = angular.module("MyModel", ["ngRoute"]);
 app.config(["$routeProvider",function($routeProvider){
     $routeProvider.
+        when('/directive',{
+        // template:'<div>hello </div>',
+        templateUrl:'directive',
+        controller:'DirectiveController'
+    }).
         when('/basic',{
-        // template:'<div>hello</div>',
         templateUrl:'basic',
         controller:'BasicController'
-    }).
-        when('/route2',{
-        template:'<div>world</div>',
-        controller:'DemoController'
     }).
         otherwise({
         redirectTo:'/'

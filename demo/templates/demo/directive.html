@@ -1,0 +1,41 @@
+{% verbatim %}
+<h3>Directive Example Codes</h3>
+<ul>
+    <li>ng-if</li>
+    <li>ng-click</li>
+    <li>ng-show</li>
+    <li>ng-click</li>
+    <li>ng-repeat</li>
+    <li>ng-switch</li>
+</ul>
+<hr>
+
+<div ng-if="condition==1">
+    condition == 1
+</div>
+<button ng-click="add()">Add</button>
+<button ng-click="subtract()">Subtract</button>
+<div>The value of condition is:{{condition}}</div>
+<hr>
+<div ng-show="checked">If checkedd is true, then Show</div>
+<div ng-hide="checked">If checked is false, then Hide</div>
+<div>
+    <button ng-init="checked=true" ng-click="checked = !checked">Click</button>
+</div>
+<hr>
+<label for="">Book Name</label><input type="text" ng-model="book.name">
+<label for="">Book Author</label><input type="text" ng-model="book.price">
+<button ng-click="addbook()">Add Book</button>
+<table class="table">
+    <thead>
+        <th>Name</th>
+        <th>Price</th>
+        <th>编辑</th>
+    </thead>
+    <tr ng-repeat="b in books">
+        <td>{{b.name}}</td>
+        <td>{{b.price}}</td>
+        <td><a href="" ng-click="edit(b.id)">Edit</a> | <a href="" ng-click="deleteBook(b.id)">Delete</a></td>
+    </tr>
+</table>
+{% endverbatim %}
