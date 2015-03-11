@@ -13,3 +13,7 @@ class BasicView(TemplateView):
 
 class DirectiveView(TemplateView):
     template_name = 'demo/directive.html'
+
+
+class CustomDirectiveView(TemplateView):
+    template_name = 'demo/custom.html'

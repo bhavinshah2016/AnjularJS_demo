@@ -10,7 +10,11 @@ app.config(["$routeProvider",function($routeProvider){
         templateUrl:'basic',
         controller:'BasicController'
     }).
-        otherwise({
+    when('/custom-directive',{
+        templateUrl:'custom',
+        controller:'CustomDirectiveController'
+    }).
+    otherwise({
         redirectTo:'/'
     });        
 }]);
