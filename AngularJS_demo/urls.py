@@ -8,4 +8,5 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^demo/', include('demo.urls')),
+    url(r'^ui-router/', include('ui_router_example.urls')),
 )

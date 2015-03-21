@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,12 +6,12 @@
     <title>Index Page</title>
     <script src="http://libs.useso.com/js/angular.js/1.2.5/angular.min.js"></script>
     <script src="http://libs.useso.com/js/angular.js/1.2.5/angular-route.min.js"></script>
-    <script src="/static/js/app.js"></script>
-    <script src="/static/js/DemoController.js"></script>
-    <script src="/static/js/BasicController.js"></script>
-    <script src="/static/js/DirectiveController.js"></script>
-    <script src="/static/js/CustomDirectiveController.js"></script>
-    <script src="/static/js/directives.js"></script>
+    <script src="{% static 'demo/js/app.js' %}"></script>
+    <script src="{% static 'demo/js/DemoController.js' %}"></script>
+    <script src="{% static 'demo/js/BasicController.js' %}"></script>
+    <script src="{% static 'demo/js/DirectiveController.js' %}"></script>
+    <script src="{% static 'demo/js/CustomDirectiveController.js' %}"></script>
+    <script src="{% static 'demo/js/directives.js' %}"></script>
     <link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.2.0/css/bootstrap.min.css">
 
 </head>
